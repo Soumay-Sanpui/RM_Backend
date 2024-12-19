@@ -1,0 +1,14 @@
+{
+  "todaySpecial": [],
+  "homeBanner": {
+    "title": "",
+    "description": "",
+    "imageUrl": "",
+    "isActive": false
+  },
+  "featuredDishes": [],
+  "announcementBar": {
+    "text": "",
+    "isActive": false
+  }
+} 

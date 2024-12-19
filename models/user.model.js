@@ -7,6 +7,12 @@ const userSchema = new mongoose.Schema({
   password: { type: String, required: true },
   address: { type: String, required: true },
   phone: { type: String, required: true },
+  totalOrders: { type: Number, default: 0 },
+  orders: [{ type: mongoose.Schema.Types.ObjectId, ref: "Order", default: [] }],
+  cart: [{
+    dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
+    quantity: { type: Number, default: 1 }
+  }]
 });
 
 userSchema.pre("save", async function (next) {
