@@ -1,7 +1,7 @@
 import { createMollieClient } from "@mollie/api-client";
 
 const mollieClient = createMollieClient({ 
-  apiKey: process.env.MOLLIE_API_KEY || 'test_2x9bGEJ3CjafNtK7xfcxsQjW54Hxhh',
+  apiKey: process.env.MOLLIE_API_KEY,
   environment: 'sandbox' // Use 'production' for live payments
 });
 
